@@ -18,7 +18,7 @@ for horas in horas_reportadas:
 
 print("Registros que alcanzan la meta:", horas_meta)
 print("Cantidad de registros:", len(horas_meta))
-print ("Cabtidad Daniela: ", cantidad) 
+print ("Cantidad Daniela: ", cantidad) 
 # Resultado esperado:
 # Registros que alcanzan la meta: [4, 3, 5]
 # Cantidad de registros: 3
