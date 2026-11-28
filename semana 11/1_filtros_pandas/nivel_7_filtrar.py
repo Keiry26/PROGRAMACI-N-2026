@@ -17,11 +17,14 @@ from nivel_6_columna_nueva import notas_con_promedio
 
 def aprobados(ruta, minimo):
     """Estudiantes con promedio mayor o igual que 'minimo'."""
-    notas = notas_con_promedio(ruta)    # cascada: nivel 6
-    # su código aquí
+    notas = notas_con_promedio(ruta)    
+    filtro = notas["promedio"] >= minimo
+    print(filtro) 
+    notas= notas[filtro]
     return notas
 
 
 if __name__ == "__main__":
     resultado = aprobados("notas.csv", 70)
     print("Estudiantes:", len(resultado))
+    print(resultado)

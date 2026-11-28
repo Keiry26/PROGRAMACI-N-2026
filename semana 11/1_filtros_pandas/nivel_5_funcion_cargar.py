@@ -13,14 +13,20 @@ NIVEL 5 · COMPLETAR LOS HUECOS. Hay dos: qué se lee (use el parámetro ruta) y
 Ejecute desde la carpeta material_estudiante:  python 1_filtros_pandas/nivel_5_funcion_cargar.py
 """
 import pandas as pd
+from pathlib import Path 
+ARCHIVO_CSV = Path (__file__).with_name("notas.csv")
+
+notas = pd.read_csv(ARCHIVO_CSV)
 
 
 def cargar_notas(ruta):
     """Lee el CSV y devuelve el DataFrame."""
-    notas = pd.read_csv(____)      # use el parámetro de la función
-    return ____                    # devuelva el DataFrame
+    notas = pd.read_csv(ARCHIVO_CSV)
+    return notas
 
 
 if __name__ == "__main__":
     notas = cargar_notas("notas.csv")
     print("Filas:", len(notas))
+    
+print(__name__)
